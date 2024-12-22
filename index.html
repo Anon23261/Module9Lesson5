@@ -70,32 +70,43 @@
                     <div class="tab-content" id="formTabsContent">
                         <!-- Access Request Form -->
                         <div class="tab-pane fade show active" id="access-form" role="tabpanel">
-                            <form id="accessForm" onsubmit="window.location.href='https://formsubmit.co/ghostsector@icloud.com'; return false;">
+                            <form action="https://formsubmit.co/ghostsector@icloud.com" method="POST">
+                                <!-- FormSubmit Configuration -->
                                 <input type="hidden" name="_subject" value="Access Request Form">
                                 <input type="hidden" name="_next" value="https://anon23261.github.io/Module9Lesson5/thank-you.html">
+                                <input type="hidden" name="_template" value="table">
+                                <input type="hidden" name="_captcha" value="true">
+                                <input type="hidden" name="_autoresponse" value="Thank you for your Access Request. We will review your application within 24-48 hours.">
+                                
                                 <div class="form-floating mb-3">
                                     <input type="text" class="form-control custom-input" id="operativeId" 
-                                           placeholder="Operative ID" required pattern="^[A-Z]{2}\d{4}$" name="operative_id">
-                                    <label for="operativeId">Operative ID</label>
-                                    <div class="form-text">Format: XX0000 (e.g., GH1234)</div>
+                                           placeholder="Operative ID" required pattern="^[A-Z]{2}\d{4}$" name="Operative_ID">
+                                    <label for="operativeId">Operative ID (Format: XX0000)</label>
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <input type="password" class="form-control custom-input" id="accessCode" 
-                                           placeholder="Access Code" required minlength="12" name="access_code">
-                                    <label for="accessCode">Access Code</label>
-                                    <div class="form-text">Minimum 12 characters, including special characters</div>
+                                    <input type="text" class="form-control custom-input" id="codename" 
+                                           placeholder="Codename" required name="Codename">
+                                    <label for="codename">Codename</label>
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <select class="form-select custom-input" id="clearanceLevel" required name="clearance_level">
-                                        <option value="">Select Level</option>
-                                        <option value="alpha">Alpha - Field Operations</option>
-                                        <option value="beta">Beta - Cyber Operations</option>
-                                        <option value="gamma">Gamma - Intelligence</option>
-                                        <option value="omega">Omega - Command</option>
+                                    <select class="form-select custom-input" id="accessLevel" name="Access_Level" required>
+                                        <option value="">Select Access Level</option>
+                                        <option value="alpha">Alpha</option>
+                                        <option value="beta">Beta</option>
+                                        <option value="gamma">Gamma</option>
+                                    </select>
+                                    <label for="accessLevel">Access Level</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <select class="form-select custom-input" id="clearanceLevel" name="Clearance_Level" required>
+                                        <option value="">Select Clearance</option>
+                                        <option value="1">Level 1</option>
+                                        <option value="2">Level 2</option>
+                                        <option value="3">Level 3</option>
                                     </select>
                                     <label for="clearanceLevel">Clearance Level</label>
                                 </div>
-                                <input type="hidden" name="contact_phone" value="4802353187">
+                                <input type="hidden" name="Contact_Phone" value="4802353187">
                                 <button type="submit" class="btn btn-danger w-100">
                                     <i class="fas fa-terminal"></i> Initialize Access
                                 </button>
@@ -104,50 +115,52 @@
 
                         <!-- Recruitment Form -->
                         <div class="tab-pane fade" id="recruit-form" role="tabpanel">
-                            <form id="recruitForm" onsubmit="window.location.href='https://formsubmit.co/ghostsector@icloud.com'; return false;">
+                            <form action="https://formsubmit.co/ghostsector@icloud.com" method="POST">
+                                <!-- FormSubmit Configuration -->
                                 <input type="hidden" name="_subject" value="Recruitment Form">
                                 <input type="hidden" name="_next" value="https://anon23261.github.io/Module9Lesson5/thank-you.html">
+                                <input type="hidden" name="_template" value="table">
+                                <input type="hidden" name="_captcha" value="true">
+                                <input type="hidden" name="_autoresponse" value="Thank you for your interest in joining GHOST Sec. We will review your application within 24-48 hours.">
+                                
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control custom-input" id="codename" 
-                                                   placeholder="Codename" required name="codename">
-                                            <label for="codename">Codename</label>
+                                            <input type="text" class="form-control custom-input" id="firstName" 
+                                                   placeholder="First Name" required name="First_Name">
+                                            <label for="firstName">First Name</label>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="email" class="form-control custom-input" id="secureEmail" 
-                                                   placeholder="Secure Email" required name="secure_email">
-                                            <label for="secureEmail">Secure Email</label>
+                                            <input type="text" class="form-control custom-input" id="lastName" 
+                                                   placeholder="Last Name" required name="Last_Name">
+                                            <label for="lastName">Last Name</label>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-floating mb-3 mt-3">
-                                    <select class="form-select custom-input" id="specialization" required name="specialization">
+                                    <input type="email" class="form-control custom-input" id="email" 
+                                           placeholder="Email" required name="Email">
+                                    <label for="email">Email Address</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <select class="form-select custom-input" id="specialization" name="Specialization" required>
                                         <option value="">Select Specialization</option>
-                                        <option value="penetration">Penetration Testing</option>
-                                        <option value="crypto">Cryptography</option>
-                                        <option value="forensics">Digital Forensics</option>
+                                        <option value="pentesting">Penetration Testing</option>
                                         <option value="malware">Malware Analysis</option>
-                                        <option value="osint">OSINT Operations</option>
+                                        <option value="forensics">Digital Forensics</option>
+                                        <option value="crypto">Cryptography</option>
                                     </select>
-                                    <label for="specialization">Primary Specialization</label>
+                                    <label for="specialization">Specialization</label>
                                 </div>
                                 <div class="form-floating mb-3">
                                     <textarea class="form-control custom-input" id="experience" 
-                                              placeholder="Experience" style="height: 100px" required name="experience"></textarea>
-                                    <label for="experience">Relevant Experience</label>
+                                              style="height: 100px" required name="Experience"
+                                              placeholder="Experience"></textarea>
+                                    <label for="experience">Experience</label>
                                 </div>
-                                <div class="mb-3">
-                                    <div class="form-check">
-                                        <input class="form-check-input custom-checkbox" type="checkbox" id="securityCheck" required name="security_check">
-                                        <label class="form-check-label" for="securityCheck">
-                                            I acknowledge the sensitive nature of this application and agree to security protocols
-                                        </label>
-                                    </div>
-                                </div>
-                                <input type="hidden" name="contact_phone" value="4802353187">
+                                <input type="hidden" name="Contact_Phone" value="4802353187">
                                 <button type="submit" class="btn btn-danger w-100">
                                     <i class="fas fa-file-signature"></i> Submit Application
                                 </button>
