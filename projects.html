@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | GHOST Sec Operations</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body class="bg-dark text-light">
+    <!-- Matrix Canvas Background -->
+    <canvas id="matrix"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-danger">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-ghost"></i> GHOST Sec
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="projects.html">Projects</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="index.html#login" class="btn btn-outline-danger me-2">Login</a>
+                    <a href="index.html#signup" class="btn btn-danger">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="portal-container">
+                    <h2 class="glitch-text mb-4">Open Source Projects</h2>
+                    
+                    <!-- Featured Projects -->
+                    <section class="mb-5">
+                        <h3 class="text-danger mb-4">Featured Projects</h3>
+                        <div class="row g-4">
+                            <!-- Project 1 -->
+                            <div class="col-md-6">
+                                <div class="project-card featured">
+                                    <div class="project-header">
+                                        <i class="fas fa-shield-virus"></i>
+                                        <h4>Phantom Scanner</h4>
+                                    </div>
+                                    <p>Advanced vulnerability scanner with AI-powered threat detection.</p>
+                                    <div class="project-stats">
+                                        <span><i class="fas fa-star"></i> 1.2k</span>
+                                        <span><i class="fas fa-code-branch"></i> 245</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="btn btn-sm btn-danger">View Project</a>
+                                        <a href="#" class="btn btn-sm btn-outline-danger">Documentation</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Project 2 -->
+                            <div class="col-md-6">
+                                <div class="project-card featured">
+                                    <div class="project-header">
+                                        <i class="fas fa-user-shield"></i>
+                                        <h4>Shadow Guard</h4>
+                                    </div>
+                                    <p>Real-time intrusion detection system with behavioral analysis.</p>
+                                    <div class="project-stats">
+                                        <span><i class="fas fa-star"></i> 987</span>
+                                        <span><i class="fas fa-code-branch"></i> 156</span>
+                                    </div>
+                                    <div class="project-links">
+                                        <a href="#" class="btn btn-sm btn-danger">View Project</a>
+                                        <a href="#" class="btn btn-sm btn-outline-danger">Documentation</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Active Projects -->
+                    <section class="mb-5">
+                        <h3 class="text-danger mb-4">Active Projects</h3>
+                        <div class="row g-4">
+                            <!-- Project Cards -->
+                            <div class="col-md-4">
+                                <div class="project-card">
+                                    <h5><i class="fas fa-lock"></i> Crypto Vault</h5>
+                                    <p>Secure encryption toolkit for sensitive data.</p>
+                                    <div class="tech-stack">
+                                        <span class="badge bg-danger">Python</span>
+                                        <span class="badge bg-danger">C++</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="project-card">
+                                    <h5><i class="fas fa-network-wired"></i> NetGuardian</h5>
+                                    <p>Network monitoring and analysis tool.</p>
+                                    <div class="tech-stack">
+                                        <span class="badge bg-danger">Go</span>
+                                        <span class="badge bg-danger">React</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="project-card">
+                                    <h5><i class="fas fa-bug"></i> BugHunter</h5>
+                                    <p>Automated vulnerability reporting system.</p>
+                                    <div class="tech-stack">
+                                        <span class="badge bg-danger">Java</span>
+                                        <span class="badge bg-danger">Spring</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Research Projects -->
+                    <section class="mb-5">
+                        <h3 class="text-danger mb-4">Research Projects</h3>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="research-card">
+                                    <h5>AI in Cybersecurity</h5>
+                                    <p>Exploring machine learning applications in threat detection.</p>
+                                    <div class="research-meta">
+                                        <span><i class="fas fa-calendar"></i> Ongoing</span>
+                                        <span><i class="fas fa-users"></i> 12 Contributors</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="research-card">
+                                    <h5>Zero Trust Architecture</h5>
+                                    <p>Implementing modern security frameworks for enterprise.</p>
+                                    <div class="research-meta">
+                                        <span><i class="fas fa-calendar"></i> Phase 2</span>
+                                        <span><i class="fas fa-users"></i> 8 Contributors</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Contribute Section -->
+                    <section>
+                        <div class="text-center">
+                            <h3 class="text-danger mb-3">Want to Contribute?</h3>
+                            <p class="mb-4">Join our community and contribute to these projects. We welcome developers of all skill levels!</p>
+                            <a href="index.html#signup" class="btn btn-danger btn-lg">
+                                <i class="fab fa-github"></i> Start Contributing
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center">
+        <div class="container">
+            <div class="security-notice mb-3">
+                <i class="fas fa-shield-alt"></i> Building Secure Solutions Together
+            </div>
+            <div class="social-links mb-3">
+                <a href="#" class="text-danger me-3"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-danger me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-danger"><i class="fab fa-discord"></i></a>
+            </div>
+            <div class="system-status">
+                <span class="status-indicator"></span>
+                System Status: <span class="status-text">ACTIVE</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Scripts -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About GHOST Sec | Red Hat Operations</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body class="bg-dark text-light">
+    <!-- Matrix Canvas Background -->
+    <canvas id="matrix"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-danger">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-ghost"></i> GHOST Sec
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="index.html#login" class="btn btn-outline-danger me-2">Login</a>
+                    <a href="index.html#signup" class="btn btn-danger">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="portal-container">
+                    <!-- About Section -->
+                    <section class="mb-5">
+                        <h2 class="glitch-text mb-4">About GHOST Sec</h2>
+                        <p class="lead text-danger mb-4">
+                            GHOST Sec is an elite open-source cybersecurity collective dedicated to advancing digital security through collaboration and innovation.
+                        </p>
+                        <p>
+                            Founded by a group of passionate security researchers and ethical hackers, GHOST Sec operates at the intersection of cybersecurity, open-source development, and community-driven innovation. Our mission is to strengthen the digital infrastructure that powers our modern world.
+                        </p>
+                    </section>
+
+                    <!-- Mission Section -->
+                    <section class="mb-5">
+                        <h3 class="text-danger mb-3">Our Mission</h3>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="mission-card">
+                                    <i class="fas fa-shield-alt mb-3"></i>
+                                    <h4>Protect</h4>
+                                    <p>Safeguarding digital assets and infrastructure through advanced security solutions and research.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mission-card">
+                                    <i class="fas fa-code mb-3"></i>
+                                    <h4>Innovate</h4>
+                                    <p>Developing cutting-edge open-source security tools and frameworks for the community.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mission-card">
+                                    <i class="fas fa-users mb-3"></i>
+                                    <h4>Collaborate</h4>
+                                    <p>Building a strong community of security professionals and enthusiasts.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mission-card">
+                                    <i class="fas fa-graduation-cap mb-3"></i>
+                                    <h4>Educate</h4>
+                                    <p>Sharing knowledge and best practices to raise security awareness globally.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Open Source Section -->
+                    <section class="mb-5">
+                        <h3 class="text-danger mb-3">Open Source Contributions</h3>
+                        <p>
+                            We believe in the power of open-source collaboration. Our team actively contributes to various security projects and maintains several tools used by the cybersecurity community:
+                        </p>
+                        <div class="row g-4 mt-3">
+                            <div class="col-md-4">
+                                <div class="project-card">
+                                    <h5>Security Analysis Tools</h5>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check text-danger"></i> Vulnerability Scanners</li>
+                                        <li><i class="fas fa-check text-danger"></i> Penetration Testing Frameworks</li>
+                                        <li><i class="fas fa-check text-danger"></i> Code Analysis Tools</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="project-card">
+                                    <h5>Research Publications</h5>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check text-danger"></i> Security Whitepapers</li>
+                                        <li><i class="fas fa-check text-danger"></i> Threat Analysis Reports</li>
+                                        <li><i class="fas fa-check text-danger"></i> Best Practice Guides</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="project-card">
+                                    <h5>Community Resources</h5>
+                                    <ul class="list-unstyled">
+                                        <li><i class="fas fa-check text-danger"></i> Training Materials</li>
+                                        <li><i class="fas fa-check text-danger"></i> Documentation</li>
+                                        <li><i class="fas fa-check text-danger"></i> Security Templates</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Join Us Section -->
+                    <section>
+                        <h3 class="text-danger mb-3">Join Our Mission</h3>
+                        <p>
+                            We're always looking for talented individuals who share our passion for cybersecurity and open-source development. Whether you're a security researcher, developer, or enthusiast, there's a place for you in GHOST Sec.
+                        </p>
+                        <div class="text-center mt-4">
+                            <a href="index.html#signup" class="btn btn-danger btn-lg">
+                                <i class="fas fa-user-plus"></i> Join GHOST Sec
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center">
+        <div class="container">
+            <div class="security-notice mb-3">
+                <i class="fas fa-shield-alt"></i> Securing the Digital Future
+            </div>
+            <div class="social-links mb-3">
+                <a href="#" class="text-danger me-3"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-danger me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-danger"><i class="fab fa-discord"></i></a>
+            </div>
+            <div class="system-status">
+                <span class="status-indicator"></span>
+                System Status: <span class="status-text">ACTIVE</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom Scripts -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
