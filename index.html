@@ -70,7 +70,9 @@
                     <div class="tab-content" id="formTabsContent">
                         <!-- Access Request Form -->
                         <div class="tab-pane fade show active" id="access-form" role="tabpanel">
-                            <form id="accessForm" action="mailto:ghostsector@icloud.com" method="post" enctype="text/plain">
+                            <form id="accessForm" onsubmit="window.location.href='https://formsubmit.co/ghostsector@icloud.com'; return false;">
+                                <input type="hidden" name="_subject" value="Access Request Form">
+                                <input type="hidden" name="_next" value="https://anon23261.github.io/Module9Lesson5/thank-you.html">
                                 <div class="form-floating mb-3">
                                     <input type="text" class="form-control custom-input" id="operativeId" 
                                            placeholder="Operative ID" required pattern="^[A-Z]{2}\d{4}$" name="operative_id">
@@ -94,7 +96,6 @@
                                     <label for="clearanceLevel">Clearance Level</label>
                                 </div>
                                 <input type="hidden" name="contact_phone" value="4802353187">
-                                <input type="hidden" name="form_type" value="Access Request Form">
                                 <button type="submit" class="btn btn-danger w-100">
                                     <i class="fas fa-terminal"></i> Initialize Access
                                 </button>
@@ -103,7 +104,9 @@
 
                         <!-- Recruitment Form -->
                         <div class="tab-pane fade" id="recruit-form" role="tabpanel">
-                            <form id="recruitForm" action="mailto:ghostsector@icloud.com" method="post" enctype="text/plain">
+                            <form id="recruitForm" onsubmit="window.location.href='https://formsubmit.co/ghostsector@icloud.com'; return false;">
+                                <input type="hidden" name="_subject" value="Recruitment Form">
+                                <input type="hidden" name="_next" value="https://anon23261.github.io/Module9Lesson5/thank-you.html">
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
@@ -145,7 +148,6 @@
                                     </div>
                                 </div>
                                 <input type="hidden" name="contact_phone" value="4802353187">
-                                <input type="hidden" name="form_type" value="Recruitment Form">
                                 <button type="submit" class="btn btn-danger w-100">
                                     <i class="fas fa-file-signature"></i> Submit Application
                                 </button>
